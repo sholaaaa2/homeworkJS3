@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+// Создаем массив
+  var styles = ["Джаз", "Блюз"];
+  document.write(styles+"<hr />");
+
+// Добавляем Рок-н-Ролл в конец
+  styles.push("Рок-н-ролл");
+  document.write(styles+"<hr />");
+
+// Заменим значение в середине на Классика. Код работает для массивов любой длины
+if (styles.length/2 == 0) {
+  styles[styles.length/2-1] = "Классика";
+}
+else {
+  styles[styles.length/2-0.5] = "Классика";
+}
+  document.write(styles+"<hr />");
+
+// Удаляем первый елемент и показываем его
+  var a = styles.shift();
+  document.write(a+"<hr />");
+
+// Вставляем Рэп и Регги в начало массива
+  styles.unshift("Рэп", "Регги");
+  document.write(styles+"<hr />");
+
+
+  </script>
+</body>
+</html>

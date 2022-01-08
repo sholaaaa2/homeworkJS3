@@ -18,12 +18,7 @@
   document.write(styles+"<hr />");
 
 // Заменим значение в середине на Классика. Код работает для массивов любой длины
-if (styles.length/2 == 0) {
-  styles[styles.length/2-1] = "Классика";
-}
-else {
-  styles[styles.length/2-0.5] = "Классика";
-}
+styles[Math.floor(styles.length/2)] = "Классика";
   document.write(styles+"<hr />");
 
 // Удаляем первый елемент и показываем его
